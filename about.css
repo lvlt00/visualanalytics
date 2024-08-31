@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: noto-serif-hebrew, sans-serif;
+    font-style: medium;
+    font-weight: 100;
+    background-color: #424242;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pills-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.pill {
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background: linear-gradient(to bottom right, #ffcc00, #ff6600);
+    border-radius: 7.5px 7.5px 7.5px 7.5px;
+    animation: float 10s infinite;
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+    100% { transform: translateY(0) rotate(360deg); }
+}
+
+@keyframes float2 {
+    0% { transform: translateX(0) rotate(0deg); }
+    50% { transform: translateX(20px) rotate(-180deg); }
+    100% { transform: translateX(0) rotate(-360deg); }
+}
+
+@keyframes float3 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(20px, -20px) rotate(90deg); }
+    100% { transform: translate(0, 0) rotate(180deg); }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    background: #424242;
+    border: 2px solid #ff9900;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 550px;
+    margin: 0 20px;
+    line-height: 30px;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #424242;
+    border: 1px solid #ff9900;
+    padding: 10px 20px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #ff9900;
+}

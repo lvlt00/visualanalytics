@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map View</title>
+    <link rel="stylesheet" href="sp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xpk7ekt.css">
+</head>
+<body>
+  
+      <div class="navigation">
+        <h3>VIEW MODE</h3>
+        <div class="button-container">
+          <a href="explore.html">
+            <button class="button-map">Map</button>
+          </a>
+          <a href="sp.html">
+            <button class="button-sc">Scatterplot</button>
+          </a>
+        </div>
+      </div>
+  
+      <div id="scatterplot">
+        <svg width="800" height="500"></svg>
+        <h1>Consumption of Anti-Depressants in Europe</h1>
+        <h4>Defined daily dosage per 1 000 inhabitants per day</h4>
+      </div>
+     
+      <div id="buttons">
+        <button class="country-button" data-country="Austria">AUSTRIA</button>
+        <button class="country-button" data-country="Belgium">BELGIUM</button>
+        <button class="country-button" data-country="Czechia">CZECHIA</button>
+        <button class="country-button" data-country="Denmark">DENMARK</button>
+        <button class="country-button" data-country="Estonia">ESTONIA</button>
+        <button class="country-button" data-country="Finland">FINLAND</button>
+        <button class="country-button" data-country="France">FRANCE</button>
+        <button class="country-button" data-country="Germany">GERMANY</button>
+        <button class="country-button" data-country="Greece">GREECE</button>
+        <button class="country-button" data-country="Hungary">HUNGARY</button>
+        <button class="country-button" data-country="Iceland">ICELAND</button>
+        <button class="country-button" data-country="Italy">ITALY</button>
+        <button class="country-button" data-country="Latvia">LATVIA</button>
+        <button class="country-button" data-country="Lithuania">LITHUANIA</button>
+        <button class="country-button" data-country="Luxembourg">LUXEMBOURG</button>
+        <button class="country-button" data-country="Netherlands">NETHERLANDS</button>
+        <button class="country-button" data-country="Norway">NORWAY</button>
+        <button class="country-button" data-country="Portugal">PORTUGAL</button>
+        <button class="country-button" data-country="Slovakia">SLOVAKIA</button>
+        <button class="country-button" data-country="Slovenia">SLOVENIA</button>
+        <button class="country-button" data-country="Spain">SPAIN</button>
+        <button class="country-button" data-country="Sweden">SWEDEN</button>
+        <button class="country-button" data-country="Turkey">TURKEY</button>
+        <button class="country-button" data-country="UK">UK</button>
+    </div>
+    <div class="button-container-about">
+      <a href="about.html">
+        <button class="button-about">About</button>
+      </a>
+    </div>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="sp.js"></script>
+</body>
+</html>
